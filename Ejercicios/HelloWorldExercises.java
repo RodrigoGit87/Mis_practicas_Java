@@ -1,5 +1,6 @@
 package Practicas_Rodrigo;
 import javax.swing.plaf.synth.SynthDesktopPaneUI;
+import java.util.Scanner;
 
 public class HelloWorldExercises {
 
@@ -35,6 +36,7 @@ public class HelloWorldExercises {
                 IO.println("   \\ _ /");
             }
             // 9. Intenta ejecutar el programa sin el méto do main y observa el error.
+
 
             //10. Intenta cambiar el nombre del archivo a uno diferente del de la clase y compílalo. ¿Qué pasa?
 }
