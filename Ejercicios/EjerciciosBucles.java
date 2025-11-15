@@ -1,6 +1,6 @@
 package Practicas_Rodrigo;
 
-public class EjerciciosCondicionales {
+public class EjerciciosBucles {
     static void main(String[] args) {
         IO.println("Establece la edad de un usuario y muestra si puede votar (mayor o igual a 18)");
         var votante = 22;
