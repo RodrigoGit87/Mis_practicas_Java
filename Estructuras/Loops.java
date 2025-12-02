@@ -51,11 +51,11 @@ public class Loops {
             IO.println("Correos de: " + correos);
         }
         IO.println("------------------");
-        // Si solo queremos recorrer la clave
+
         for (Map.Entry<String, String> correos : email.entrySet()) {
-            IO.println("Correos de: " + correos.getKey());
-            // Si solo queremos recorrer el value
-            IO.println("Correos de: " + correos.getValue());
+            IO.println("Correos de: " + correos.getKey());// Si solo queremos recorrer la clave
+
+            IO.println("Correos de: " + correos.getValue()); // Si solo queremos recorrer el value
         }
         IO.println("------------------");
         // Loop While
@@ -67,25 +67,27 @@ public class Loops {
         IO.println("------------------");
         // While - Array (usamos el array de antes)
         int i = 0;
-        while (i < nombre.length) {
-            IO.println("Nombre: " + nombre[i]);
+        while (i < familia.length) {
+            IO.println("Nombre: " + familia[i]);
             i++;
         }
         IO.println("------------------");
+
         /*
-         * podemos hacer que mientras recorre el array si encuentra algo q queremos
+         * podemos hacer que mientras recorre el array si encuentra algo q queremos, que
          * haga algo. Ejemplo:
          */
         i = 0;
-        boolean encontrar = false;
+        boolean encontrar = false; //bandera de guardia
         while (!encontrar) {
-            if (nombre[i].equals("Tom")) {
+            if (familia[i].equals("Tom")) {
                 IO.println("Hay un perro en el array !");
                 encontrar = true;
             }
             i++;
         }
         IO.println("------------------");
+
         // Loop Do-While (Asegura al menos una iteración)
         i = 0;
         do {
