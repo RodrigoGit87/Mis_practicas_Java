@@ -1,4 +1,4 @@
-
+package Practicas_Rodrigo.Ejercicios_ModificadoresAcceso;
 // 1. Crea una clase Person con atributos privados name y age. Usa los métodos getName(), setName(), getAge() y setAge() 
 // para asignar y mostrar valores desde otra clase.
 

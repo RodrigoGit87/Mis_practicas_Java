@@ -1,3 +1,5 @@
+package Practicas_Rodrigo.Ejercicios_ModificadoresAcceso;
+
 public class MainPerson {
     public static void main(String[] args){
 

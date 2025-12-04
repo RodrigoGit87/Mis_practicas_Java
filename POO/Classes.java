@@ -12,7 +12,7 @@ public class Classes {
     //    rodrigo.age = 38;
     //    rodrigo.sayHello();
 
-        var lucia = new Person("Lucia", 16);
+        var lucia = new Persona("Lucia", 16);
         lucia.sayHello();
     }
 }

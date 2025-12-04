@@ -1,17 +1,16 @@
 
 
-public class Person {
+public class Persona {
     // Atributos
     String name;
     int age;
 
-    // Constructor, mecanismo de instanciación con valores predefinidos en el
-    // constructor
+    // Constructor, mecanismo de instanciación con valores predefinidos.
     /*
      * Por ejemplo la entidad Usuario, debería estar definida si o si por un usuario
      * y contraseña.
      */
-    public Person(String name, int age) { // meter como parametros los atributos de la clase, obliga a q
+    public Persona(String name, int age) { // meter como parametros los atributos de la clase, obliga a q
         // cada vez que se instacia la clase Person, se defina dichos atributos (name y
         // age en este caso)
 

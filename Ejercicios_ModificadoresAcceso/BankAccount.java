@@ -16,15 +16,13 @@ public class BankAccount {
     }
         //metodo depositar
         public void deposit(double amount){
-        
             setBalance(balance += amount);
-        
     }
         //metodo retirar
         public void withdraw(double amount){
             setBalance(balance -= amount);
         }
-
+    //main
     public void main (){
         var cuenta1 = new BankAccount();
         cuenta1.setBalance(1050.45);
