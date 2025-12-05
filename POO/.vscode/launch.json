@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Herencia",
+            "request": "launch",
+            "mainClass": "Herencia",
+            "projectName": "POO_2cf16c91"
+        },
+        {
+            "type": "java",
             "name": "ModificadoresAcceso",
             "request": "launch",
             "mainClass": "ModificadoresAcceso",
