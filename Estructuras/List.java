@@ -3,9 +3,9 @@ package Practicas_Rodrigo.Estructuras;
 import java.util.ArrayList;
 
 public class List {
-    static void main() {
-        // Declaración y creación
-        ArrayList<String> names = new ArrayList<>();// Hay que definir el tipo de array; <String> en este caso
+    static void main (){
+        //Declaración y creación
+        ArrayList<String> names = new ArrayList<>();//Hay que definir el tipo de array; <String> en este caso
 
         var numbers = new ArrayList<Integer>();/*
                                                 * Para crear un arrayList de números enteros, tenemos q indicar
@@ -13,37 +13,33 @@ public class List {
                                                 * porque con los datos primitivos da error.
                                                 */
 
-        // tamaño del array
-        // names.size();
+        //tamaño del array
+        //names.size();
 
-        // Añadir elementos
+        //Añadir elementos
         names.add("Rodrigo ");
-        names.add("sandra ");
+        names.add ("sandra ");
         names.add("lucia ");
         names.add("virginia ");
 
         IO.println("tamaño del array: " + names.size());
 
-        // Acceder a elementos
-        // names.get(posicion));
+        //Acceder a elementos
+        //names.get(posicion));
         IO.println(names.get(1));
         // otras formas
         // names.getFirst()); y names.getLast());
         IO.println(names.getFirst() + "\n");
         IO.println(names.getLast() + "\n");
 
-        // modificar elementos
+        //modificar elementos
         names.set(1, "orco de mordor ");
         IO.println(names.get(1));
 
-        // Eliminar elementos
+        //Eliminar elementos
         names.remove(1);
-        IO.println(names.get(1));/*
-                                  * Cuando eliminas un elemento, todos los elementos que estaban después se
-                                  * desplazan una
-                                  * posición hacia la izquierda para llenar el hueco, y el tamaño de la lista se
-                                  * reduce.En este caso a 3posiciones.
-                                  */
+        IO.println(names.get(1));/*Cuando eliminas un elemento, todos los elementos que estaban después se desplazan una
+        posición hacia la izquierda para llenar el hueco, y el tamaño de la lista se reduce.En este caso a 3posiciones.*/
 
         /*
          * names.remove(3);
@@ -53,19 +49,17 @@ public class List {
          * elementos (0,1,2)
          */
 
-        IO.println(names.size());// <--debe dar 3
+        IO.println(names.size());//<--debe dar 3
 
-        // Buscar elementos
-        // names.contains("valor que busquemos");
+        //Buscar elementos
+        //names.contains("valor que busquemos");
         IO.println(names.contains("Rodrigo "));
 
-        // Limpiar ArrayList
-        // names.clear();
+        //Limpiar ArrayList
+        //names.clear();
         IO.println(names);
 
         // Iterar sobre el ArrayList
-        IO.println("\n--- Iterando sobre el ArrayList ---");
-
         // 1. Usando bucle for-each (la forma más común)
         IO.println("1. Usando bucle for-each:");
         for (String name : names) {
