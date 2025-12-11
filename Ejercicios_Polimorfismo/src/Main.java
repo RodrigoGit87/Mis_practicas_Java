@@ -2,11 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    //Funcion para el ejercicio 6 Notification
+    //Función para el ejercicio 6 Notification
     public static void sendNotification(Notification n) { //Notification n significa "Acepto cualquier cosa que sea hija de Notification".
         System.out.println(" ");
         n.send();
     }
+    // Función para el ejercicio 7
+    public static void showAnimalType (Animal animal, Animal animal2, Animal animal3) {
+        IO.println("tipo de animal: " +  animal.getType() + ", " + animal2.getType() + ", " +  animal3.getType());
+    }
+    // main
     void main(String[] args) {
         IO.println("Hello Polimorfismo");
 
@@ -67,6 +72,19 @@ public class Main {
 //        sendNotification(email);
 //        sendNotification(sms);
 //        sendNotification(mensajeDeWeb);
+        // 7. Crea una función showAnimalType(Animal animal) que imprima el tipo de animal.
+        // Pasa diferentes subclases (Dog, Cat, Horse) para que cada una imprima su tipo con su propio getType() sobrescrito.
+//        var perro = new Animal.Dog(" tom"," labrador");
+//        perro.setType(" perro");
+//
+//        Animal gato = new Animal.Cat("garfield"," gatuna ");
+//        gato.setType(" gato ");
+//
+//        var caballo = new Animal.Horse(" Rocinante ", " alguna clase");
+//        caballo.setType(" caballo ");
+//
+//        showAnimalType(perro,gato,caballo);
+
 
 
 
