@@ -32,7 +32,7 @@ public class Funciones {
     //Sobrecarga de funciones
 
     /* En Java, sobrecarga de métodos permite definir múltiples métodos con el mismo nombre
-    pero con diferentes parámetros.
+    pero con diferentes parámetros (distinta firma).
     Las reglas clave para la sobrecarga de métodos:
     -Mismo Nombre: Todos los métodos sobrecargados deben tener el mismo nombre.
     -Parámetros Diferentes: Cada versión del mét0do debe tener un número diferente de parámetros,
@@ -46,7 +46,8 @@ public class Funciones {
         for (String email: emails){
         sendEmailToUser(email);//Imaginar código q envie mails (complejo)
         }
-    }//<-Creada la función, dentro de main hay q crear un ArrayList de tipo String q contenga los mails para pasárselo como parametro
+    }//<-Creada la función, dentro de main hay q crear un ArrayList de tipo String q contenga los mails para pasárselo
+    // como parametro
 
     //Funciones con retorno
     public static boolean sendEmailWithState (String email) {

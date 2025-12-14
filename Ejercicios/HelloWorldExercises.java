@@ -35,7 +35,7 @@ public class HelloWorldExercises {
                 IO.println("  ( o o )");
                 IO.println("   \\ _ /");
             }
-            // 9. Intenta ejecutar el programa sin el méto do main y observa el error.
+            // 9. Intenta ejecutar el programa sin el metodo main y observa el error.
 
 
             //10. Intenta cambiar el nombre del archivo a uno diferente del de la clase y compílalo. ¿Qué pasa?

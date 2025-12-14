@@ -13,8 +13,6 @@ public class List {
                                                 * porque con los datos primitivos da error.
                                                 */
 
-        //tamaño del array
-        //names.size();
 
         //Añadir elementos
         names.add("Rodrigo ");
@@ -22,6 +20,8 @@ public class List {
         names.add("lucia ");
         names.add("virginia ");
 
+        //tamaño del array
+        //names.size();
         IO.println("tamaño del array: " + names.size());
 
         //Acceder a elementos
