@@ -1,15 +1,19 @@
-package Practicas_Rodrigo.POO;
 //Abstracción: 'Blinda' la superclase, no permitiendo hacer instancias (objetos) de esa clase.
 /*En este caso, la clase animal abstracta está definiendo el funcionamiento por defecto, pero no
 permite el animal objeto instanciable (un new Animal).
  */
 public class Abstracion {
     static void main(String[] args) {
-        /* var animal = new Animal(); // <-- no se permite instanciar de la superclase abstracta*/
-        var dog = new Dog();//la clase Dog si se permite por q no es abstracta, pero es heredada de
-        //la superclase abstracta Animal
-        dog.sleep();/* Aunq el metodo sleep es propio de la superclase, gracias a la hederacion,
-        se puede usar en la instancia de la clase hija(tmb heredada) */
+        /*
+         * var animal = new Animal(); // <-- no se permite instanciar de la superclase
+         * abstracta
+         */
+        var dog = new Dog();// la clase Dog si se permite por q no es abstracta, pero es heredada de
+        // la superclase abstracta Animal
+        dog.sleep();/*
+                     * Aunq el metodo sleep es propio de la superclase, gracias a la hederacion,
+                     * se puede usar en la instancia de la clase hija(tmb heredada)
+                     */
         dog.sound();
 
         var cat = new Cat();
@@ -24,10 +28,13 @@ public class Abstracion {
 
     }
 
-    //Clase Abstracta
+    // Clase Abstracta
     public static abstract class Animal {
-        public abstract void sound(); /*Metodo con abstraccion. ESte metodo indica q todos los animales pueden tener
-        sonido, pero no especifica cual (es abstracto) por lo q cada clase hija debe definir el metodo sonido*/
+        public abstract void sound(); /*
+                                       * Metodo con abstraccion. ESte metodo indica q todos los animales pueden tener
+                                       * sonido, pero no especifica cual (es abstracto) por lo q cada clase hija debe
+                                       * definir el metodo sonido
+                                       */
 
         public void sleep() { // metodo sin abstracción
             System.out.println(" El animal esta durmiendo ");
@@ -59,19 +66,29 @@ public class Abstracion {
             System.out.println(" el gato duerme");
         }
     }
+
     // Interface - Tipo de abstracción
-    /*La interfaz permite una 'plantilla' de un metodo especifico q queramos implementar en ciertas
-    * clases hijas*/
-    /*Las interfaces, a diferencia de la herencia q solo permite heredar de uan superclase, si que permiten implementar
-    * varias interfaces en la clase hija. Eso da la posibilidad de especializar, un animal en este ejemplo,
-    *  todo lo q queramos*/
+    /*
+     * La interfaz permite una 'plantilla' de un metodo especifico q queramos
+     * implementar en ciertas
+     * clases hijas
+     */
+    /*
+     * Las interfaces, a diferencia de la herencia q solo permite heredar de uan
+     * superclase, si que permiten implementar
+     * varias interfaces en la clase hija. Eso da la posibilidad de especializar, un
+     * animal en este ejemplo,
+     * todo lo q queramos
+     */
     public interface Flying {
         void fly();
     }
-    public interface Flying2{
+
+    public interface Flying2 {
         void fly2();
     }
-    public static class Bird extends Animal implements Flying{ // palabra reservada implements + nombre Interfaz
+
+    public static class Bird extends Animal implements Flying { // palabra reservada implements + nombre Interfaz
 
         @Override
         public void sound() {
@@ -79,13 +96,15 @@ public class Abstracion {
         }
 
         @Override
-        public void fly() { // al usar implements nos dirá el IDe de agregar el metodo q viene con la interfaz. lo hacemos
-            //y ya lo definimos.
+        public void fly() { // al usar implements nos dirá el IDe de agregar el metodo q viene con la
+                            // interfaz. lo hacemos
+            // y ya lo definimos.
             System.out.println(" El pajaro vuela ");
 
         }
     }
-    public static class Bat extends Animal implements Flying, Flying2{ // <-- 2 interfaces en la misma clase
+
+    public static class Bat extends Animal implements Flying, Flying2 { // <-- 2 interfaces en la misma clase
 
         @Override
         public void sound() {
